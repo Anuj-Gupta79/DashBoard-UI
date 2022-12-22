@@ -40,7 +40,7 @@ module.exports = {
         },
         backgroundImage: {
           'hero-pattern':
-            "url()",
+            "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPQmG1oiYGm9B72R9tJQ23Mg9q8LV6-zylag&usqp=CAU')",
         },
       },
     },
