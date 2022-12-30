@@ -1,8 +1,12 @@
 import React from 'react';
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, DateTime, Legend, Tooltip, LineSeries } from '@syncfusion/ej2-react-charts';
 import { lineCustomSeries, LinePrimaryYAxis, LinePrimaryXAxis } from '../../data/dummy';
+import { useStateContext } from '../../contexts/ContextProvider';
 
 const LineChart = () => {
+  const { currentMode } = useStateContext();
+
+
   return (
     <ChartComponent 
       id = "line-chart"
@@ -11,6 +15,7 @@ const LineChart = () => {
       primaryYAxis={LinePrimaryYAxis}
       tooltip={{enable : true}}
       chartArea={{border : 0}}
+      background={currentMode === 'Dark' ? '#33373E' : '#fff'}
     >
       <Inject services={[LineSeries, DateTime, Tooltip, Legend]}/>
       <SeriesCollectionDirective>
