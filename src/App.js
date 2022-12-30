@@ -75,7 +75,7 @@ const App = () => {
               <Route path="/customers" element={<Customers />}/>
 
               {/* apps */}
-              <Route path="/calender" element={<Calender />}/>
+              <Route path="/Calendar" element={<Calender />}/>
               <Route path="/kanban" element={<Kanban />}/>
               <Route path="/editor" element={<Editor />}/>
               <Route path="/color-picker" element={<ColorPicker />}/>
